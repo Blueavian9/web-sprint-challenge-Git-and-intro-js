@@ -274,7 +274,6 @@ Use addArtist to do the following:
 2. Recieve a string (name), a string (years), a string (genre), a string (nationality), and a string (bio) as arguments passed from the SECOND, THIRD, FOURTH, FIFTH, and SIXTH parameters, repsectively.
 3. Create an object with the following format:
   { 
-    id: 20,
     name: Your Name Here, 
     years: Your Birth Year - current day,
     genre: Web Design, 
