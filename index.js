@@ -233,7 +233,7 @@ Use getArtistByIndex to do the following:
 
 function getArtistByIndex(artists, index) {
   return `the artist at index ${artists[index].id} is ${artists[index].name}`;
-  }
+}
  
 
 
@@ -277,22 +277,23 @@ Use addArtist to do the following:
     name: Your Name Here, 
     years: Your Birth Year - current day,
     genre: Web Design, 
-    nationality: Your Nationality Here
+    nationality: Your Nationality Here,
     bio: Add 1-2 sentences (or use lorem ipsum)
   }  
 4. Return the array
 🌟 EXAMPLE: Invoking addArtist(artists, 'John Doe', '1988-2022', 'Full Stack Development', 'African American', 'I have a background in customer service at Big Retail Chain. I am attending BloomTech to become a Frontend Developer.') should return the artists array with the above object added to the end of the array. */
 
-function addArtist(artists) {
-  
-const addArtist = {
- id: 35,
- name: Cesar,
- years: 'July/27/1986 - March/21/2022',
- genre: Web-Design,
- nationality: 'Mexican American',
- bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+function addArtist(artists, name, years, genre, nationality, bio) {
+ const arrCopy = artists;
+ this.name = name;
+ this.years = years;
+ this.genre = genre;
+ this.nationality = nationality;
+ this.bio = bio;
+ arrCopy.push({name: this.name, years: this.years, genre: this.genre, nationality: this.nationality, bio: this.bio })
+ return arrCopy;
 }
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -373,4 +374,4 @@ module.exports = {
   lotsOfArt,
   artistInfo,
   artistByCountry
-};
+}
